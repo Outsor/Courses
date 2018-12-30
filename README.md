@@ -16,7 +16,7 @@ $ rails s
 * * *
 
 ### Heroku云部署
-本项目已经在Heroku上进行了部署 ([演示Demo戳这里](https://csiie.herokuapp.com/ ))
+本项目已经在Heroku上进行了部署 ([演示Demo戳这里](https://yyiie.herokuapp.com/ ))
 
 tips：Heroku的注册和登录可能需要科学上网，请自备梯子。
 
