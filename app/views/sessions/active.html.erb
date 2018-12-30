@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-sm-offset-4 col-sm-4">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h4><span class="glyphicon glyphicon-lock"></span> 激活账号</h4>
+      </div>
+      <div class="panel-body">
+       
+        <%= form_for :email, url: forgot_path, method: :post, html: {role: 'form'}  do |f| %>
+            <div class="form-group">
+              <%= f.label :email, "请输入注册时使用的邮箱" %>
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                <%= f.email_field :email, class: 'form-control', placeholder: "输入邮箱" %>
+              </div>
+            </div>
+            
+            <%= button_tag type: "submit", class: "btn btn-success btn-block" do %>
+                <span class="glyphicon glyphicon-wrench"></span>发送激活邮件
+            <% end %>
+
+        <% end %>
+      <div class="panel-footer">
+        <p>没有账号?
+          <%= link_to "注册", new_user_path %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-sm-offset-4 col-sm-4">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h4><span class="glyphicon glyphicon-lock"></span> 找回密码</h4>
+      </div>
+      <div class="panel-body"> 
+      
+         <%= form_for(:session, url: reset_path, method: :post, html: {role: 'form'}) do |f| %>
+            <div class="form-group">
+              <%= f.label :email, "账号:  #{@user.email}"%>              
+                <%= f.hidden_field :email, class: 'form-control', :value => @user.email%>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                <%= f.password_field :password, class: 'form-control', placeholder: "输入密码" %>
+              </div>
+            </div>          
+            
+            <%= button_tag(type: "submit", class: "btn btn-success btn-block") do %>
+                <span class="glyphicon glyphicon-off"></span>重置密码
+            <% end %>
+
+        <% end %>
+      <div class="panel-footer">
+        <p>没有账号?
+          <%= link_to "注册", new_user_path %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+

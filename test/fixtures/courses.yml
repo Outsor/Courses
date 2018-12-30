@@ -1,0 +1,120 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  course_code: "011D9039Z﹡"
+  name: "数理逻辑"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  course_week: "第2-12周"
+  course_time: "周一(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacherluo
+#
+two:
+  course_code: "011D9032Z﹡"
+  name: "特征列方法引论"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "18"
+  course_week: "第2-21周"
+  course_time: "周二(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "课堂开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacherluo
+
+three:
+  course_code: "011D9039Z﹡"
+  name: "overnumber"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "15"
+  course_week: "第2-12周"
+  course_time: "周二(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacherluo
+
+course4:
+  course_code: "011D9039Z﹡"
+  name: "course4"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "1"
+  course_week: "第2-12周"
+  course_time: "周一(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacherluo
+
+course5:
+  course_code: "011D9039Z﹡"
+  name: "course5"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "1"
+  course_week: "第2-10周"
+  course_time: "周一(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacherluo
+
+course6:
+  course_code: "011D9039Z﹡"
+  name: "course6"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "1"
+  course_week: "第11-20周"
+  course_time: "周一(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacherluo
+
+course7:
+  course_code: "011D9039Z﹡"
+  name: "course6"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "1"
+  course_week: "第11-20周"
+  course_time: "周三(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacher6
+
+
+
+
+

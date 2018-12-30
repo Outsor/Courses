@@ -1,0 +1,80 @@
+<!--sgg26-->
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12 list-group-item active" style="background-color: #e2e2e2;padding-bottom: 10px;padding-top: 10px">
+      <div style="font-size: 40px; padding-left: 40px">
+        <%#= image_tag "logo.jpg", :height => '90', :width => '90' %>
+        <img src="/images/logo.jpg" alt="logo" width="90px" height="90px">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp果壳选课系统
+      </div>
+
+    </div>
+    <hr>
+
+
+    <div class="row">
+      <section id="instruction">
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-sm-6">
+              <h1>最新通知</h1>
+              <h6>Recent Big News :)</h6>
+              <p class="lead">
+                <% @notice.each do |notice| %>
+                <div>
+              <span class="glyphicon glyphicon-hand-right">
+                <%= link_to notice.name, notice_url(notice) %>
+              </span>
+                  <span class="glyphicon glyphicon-calendar" style="float: right">
+                  <%= notice.created_at.strftime('%Y-%m-%d %H:%M') %>
+                </span>
+                </div>
+                <br>
+              <% end %>
+              </p>
+            </div>
+            <div class="col-sm-1"></div>
+
+
+          </div>
+        </div>
+      </section>
+      <div class="col-md-3" style="font-size: 17px; padding-left: 50px">
+        </br>
+        <%= image_tag "p1.png" %>
+        学生选课</br></br></br>
+        <%= image_tag "p2.png" %>
+        成绩查询</br></br></br>
+        <%= image_tag "p3.png" %>
+        选课查询</br>
+
+      </div>
+
+      <div class="col-md-3" style="font-size: 17px; padding-left: 50px">
+        </br>
+        <%= image_tag "p4.png" %>
+        课程管理</br></br></br>
+        <%= image_tag "p5.png" %>
+        成绩管理</br></br></br>
+        <%= image_tag "p6.png" %>
+        邮件系统</br>
+
+      </div>
+      <div class="col-md-3" style="font-size: 17px; padding-left: 50px">
+        </br>
+        <%= image_tag "p7.png" %>
+        课表查询</br></br></br>
+        <%= image_tag "p8.png" %>
+        公告功能</br></br></br>
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+</div>

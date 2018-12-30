@@ -1,0 +1,12 @@
+login以后
+添加新app
+heroku create [appname]
+重命名
+heroku apps: rename [newname]
+
+添加heroku分支：
+heroku git:remote -a csiie
+推送
+git push heroku master
+
+heroku open

@@ -1,0 +1,6 @@
+<h1><%= @user.name %>,您好！</h1>
+请在浏览器的地址栏中输入如下地址来激活您的账户：<br/>
+<a href='http://csiie.herokuapp.com/users/activate?email=<%= @user.email %>&token=<%= @user.token %>'>
+  http://csiie.herokuapp.com/users/activate?email=<%= @user.email %>&token=<%= @user.token %>
+</a>
+

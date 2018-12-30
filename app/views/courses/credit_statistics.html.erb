@@ -1,0 +1,99 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-2">
+      <%= render "shared/sidenav" %>
+    </div>
+
+    <div class="col-sm-8">
+
+      <div class="panel panel-primary filterable">
+
+
+        <div class="panel-heading">
+          <% if student_logged_in? %><h3 class="panel-title">学分统计</h3>
+          <% end %>
+        </div>
+
+      
+        <div class="panel-body">
+          <% if (student_logged_in? )%>
+          <div class="panel-body">
+            <%= form_tag({}, {:method => :get}) do %>
+              <%= label_tag "学生类型:" %>
+              <%= select_tag :type, options_for_select(@stu_type, :selected=>params[:type]) %>
+              <%= button_tag "查询" %>
+            <% end %>
+          </div>
+  
+          
+            <table class="table table-striped" >
+            <h3 align="center"><%= @year_term_current %></h3>
+            <thead>
+            <tr>
+              <th>类别</th>
+              <th>公共必修课程及学分</th>
+              <th>公共选修课程及学分</th>
+              <th>专业学位课学分要求</th>
+              <th>总学分要求</th>
+            
+            </tr>
+
+            <tbody>
+           
+                <tr>
+                  <td>学习要求</td>
+                  <td style="width: 300px;">人文系列讲座（1学分)
+                    <br>中国特色社会主义理论与实践研究（2学分）
+                    <br>自然辩证法概论（1学分）
+                    <br>硕士学位英语（英语A）（3学分）
+                    <% if @selected_type == "专硕"%>
+                    <br>知识产权（1学分）
+                    <br>信息检索（1学分）
+                    <br>专业英语（2学分）
+                    <br>工程伦理（0.5学分）
+                    <% end %>
+
+                    <% if @selected_type == "直博"%>
+                    <br>中国马克思主义与当代（2学分）
+                    <br>英语B（2学分）
+                    <% end %>
+
+
+                  </td>
+                  <% if @selected_type == "直博"%>
+                  <td>>=2学分</td>
+                  <td>>=16学分</td>
+                  <td>>=38学分</td>
+                  <% else %>
+                  <td>>=2学分</td>
+                  <td>>=12学分</td>
+                  <td>>=30学分</td>
+                  <% end%>
+                </tr>
+
+                <tr>
+                  <td>选课情况</td>
+                  
+                  <td><%= @public_major_credits.to_s + "学分" %></td>
+                  <td><%= @public_not_credits.to_s + "学分" %></td>
+                  <td><%= @degree_credits.to_s + "学分" %></td>
+                  <td><%= @all_credits.to_s + "学分" %></td>
+                </tr>
+
+                <tr>
+                  <td>获取学分</td>
+                  <td><%= @public_major_exam_credits.to_s + "学分" %></td>
+                  <td><%= @public_not_exam_credits.to_s + "学分" %></td>
+                  <td><%= @degree_exam_credits.to_s + "学分" %></td>
+                  <td><%= @all_exam_credits.to_s + "学分" %></td>
+                </tr>
+
+            </tbody>
+          </table>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
