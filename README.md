@@ -1,4 +1,4 @@
-# [Course Select](https://csiie.herokuapp.com/)
+# [Course Select](https://yyiie.herokuapp.com/)
 
 ### 本机部署：
 以下的部署步骤在Mac和Linux环境下均可执行：
@@ -26,7 +26,7 @@ tips：Heroku的注册和登录可能需要科学上网，请自备梯子。
 
 3.`heroku login` 以后添加新`app：heroku creat [appname]`
 
-4.heroku会自动将自己添加进git的remote仓库中，如果没有的话可以手动添加heroku分支：`heroku git:remote -a csiie`
+4.heroku会自动将自己添加进git的remote仓库中，如果没有的话可以手动添加heroku分支：`heroku git:remote -a yyiie`
 
 5.运行`git push heroku master` 向heroku云端进行部署，稍等片刻。从各种环境都会自动进行部署。
 
