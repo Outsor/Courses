@@ -49,15 +49,15 @@
             </li>
              <li class="list-group-item">
               <%= link_to my_course_list_courses_path do %>
-                  <span class="glyphicon glyphicon-chevron-right"></span> 
-                  查看课表
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  学期课表
                   <span class="label label-info pull-right"></span>
               <% end %>
             </li>
              <li class="list-group-item">
               <%= link_to credit_statistics_courses_path do %>
-                  <span class="glyphicon glyphicon-chevron-right"></span> 
-                  学分统计
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  选课学分提示
                   <span class="label label-info pull-right">已选<%= all_degree_credits(current_user.grades,0) %>学分</span>
               <% end %>
             </li>
@@ -77,7 +77,7 @@
 
         <% if student_logged_in? %>
             <a data-toggle="collapse" data-parent="#accordion" href="#GradeCollapse"><span class="glyphicon glyphicon-user"></span>
-              所有成绩</a>
+              查询成绩</a>
         <% end %>
       </h4>
     </div>
