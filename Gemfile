@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 gem 'bootstrap-sass', '~> 3.3.7'
 #gem 'rspec', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -67,5 +67,3 @@ end
 group :production do
   gem 'rails_12factor'
 end
-
-
