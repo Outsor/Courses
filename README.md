@@ -119,20 +119,15 @@ HTTP response codes:
 <img src="/lib/reset/1.png" width="700">  
 如果在登录的时候忘记密码，就点击下方的忘记密码链接。  
 
-<img src="/lib/reset/3.png" width="700">  
+<img src="/lib/reset/2.png" width="700">  
 在文本框内输入注册时所使用的邮箱  
 
-<img src="/lib/reset/4.png" width="700">  
+<img src="/lib/reset/3.png" width="700">  
 发送邮件成功后，系统会反馈会一个提示  
 
-<img src="/lib/reset/5.png" width="700">  
+<img src="/lib/reset/4.png" width="700">  
 这是邮箱中收到的内容，点开链接进行重置密码的页面  
 
-<img src="/lib/reset/6.png" width="700">  
-将修改的密码输入之后点击“重置密码”  
-
-<img src="/lib/reset/7.png" width="700">  
-修改成功  
 
 #### 系统管理员功能
 
@@ -142,12 +137,6 @@ HTTP response codes:
 这是主页上显示的公告内容，无论是否登录都可以点击进行查看。  
 
 <img src="/lib/notice/2.png" width="700">  
-管理员未登录的状态只能对公告进行查看。  
-
-<img src="/lib/notice/3.png" width="700">  
-管理员登录以后便多了编辑的选项。  
-
-<img src="/lib/notice/4.png" width="700">  
 进入编辑的选项后，可以对公告进行增删改查的操作。  
 
 #### 学生功能
