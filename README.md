@@ -73,6 +73,7 @@ $ rails s
 ### 特色功能：
 * 实现注册激活，忘记密码邮箱验证（第三方）
 * 邮件自动推送成绩
+* 脚本爬取国科大真实选课数据
 
 #### 并发量，系统压力测试
 结果如下：
@@ -144,39 +145,40 @@ HTTP response codes:
 
 #### 学生功能
 
-<img src="/lib/dfq/1.png" width="700">  
-<img src="/lib/dfq/2.png" width="700">  
-课程查询功能：支持多条件查询，如按照学院、课程类型、课程时间、课程名称。
+<img src="/lib/dfq/1.png" width="700">
 
-<img src="/lib/dfq/3.png" width="700">  
+<img src="/lib/dfq/2.png" width="700">
+
+<img src="/lib/dfq/3.png" width="700">
+
+<img src="/lib/dfq/4.png" width="700">  
+
+<img src="/lib/dfq/5.png" width="700">  
+
+课程查询功能：支持多条件查询，如按照学院、课程类型、课程时间、课程名称
+
 冲突控制：时间冲突控制（包括节次和周次的冲突）、选课人数控制、已选课程冲突  
 
-<img src="/lib/dfq/4.png" width="700">   
 学位课设置：选课过程中可设置学位课，在已选课程里修改学位课设置(选课结束后不能修改)  
 
-<img src="/lib/dfq/5.png" width="700">   
 成绩查询：支持按学期查询  
 
-<img src="/lib/ly/1.png" width="700">   
 课表生成功能  
-学生角色在选课后，可以自动生成本学期已选课程的课表，并可根据选课阶段的增删改情况更新课表。课表中显示内容依次为课程名称、课程学分、授课教师、授课地点、授课周数。  
 
-<img src="/lib/ly/2.png" width="700">   
-<img src="/lib/ly/3.png" width="700">   
-<img src="/lib/ly/4.png" width="700">   
-<img src="/lib/ly/5.png" width="700">   
-学分统计功能  
-学生角色可以随时查看所有已选课程学分以及当前所得学分。该界面针对学硕、专硕和直博类型学生分别设计了不同的培养方案。在左侧菜单栏中可以显示已选总学分。  
+学分统计功能，在左侧菜单栏中可以显示已选总学分。  
 
 #### 教师功能
 
-<img src="/lib/dfq/6.png" width="700">  
+<img src="/lib/dfq/6.png" width="700">
+
+<img src="/lib/dfq/7.png" width="700">
+
+<img src="/lib/dfq/8.png" width="700">
+
 查看课程：查看当前学期的课程和下学期预计增加的课程
 
-<img src="/lib/dfq/7.png" width="700">  
 增加新课程：在增课时间内可增加新课程
 
-<img src="/lib/dfq/8.png" width="700">  
 成绩管理：为本学期所授课程下的学生填写成绩，并以邮件通知
 
 #### 系统功能
