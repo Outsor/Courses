@@ -95,15 +95,15 @@ HTTP response codes:
 
 以下为程序运行截图：  
 
-<img src="/lib/active/1.png" width="700">  
+<img src="/lib/active/11.png" width="700">  
 点击完右上角注册按钮后，进入注册页面，填写注册信息，完成后点击注册按钮。  
 
-<img src="/lib/active/2.png" width="700">  
+<img src="/lib/active/22.png" width="700">  
 系统校验注册信息，都符合后存储到数据库中，并且给用户发一封激活邮件，邮件发送成功后，返回到主页。  
 
-<img src="/lib/active/3.png" width="700">  
+<img src="/lib/active/33.png" width="700">  
 登录注册时所用的邮箱，会收到以上内容，点击邮件中的链接将账户激活。    
-<img src="/lib/active/4.png" width="700">  
+<img src="/lib/active/44.png" width="700">  
 点击链接后，成功激活会返回如上图的提示。
 
 ##### 用户找回密码
