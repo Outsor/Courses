@@ -1,10 +1,17 @@
 # [Course Select](https://yyiie.herokuapp.com/)
+本项目已部署在heroku平台上 ([演示Demo戳这里](https://yyiie.herokuapp.com/ ))
+### 说明：
+* 使用Bootstrap作为前端库
+* 使用Rails_admin Gem作为后台管理
+* 使用Postgresql作为数据库
+使用前需要安装Bundler，Gem，Ruby，Rails等依赖环境。
+
+* * *
 
 ### 本机部署：
-以下的部署步骤在Mac和Linux环境下均可执行：
+以下部署步骤在Mac和Linux环境下均可执行：
 
-
-接着执行以下代码：
+执行以下代码：
 ```
 $ git clone https://github.com/Outsor/Courses.git
 $ cd Courses
@@ -13,20 +20,24 @@ $ rake db:migrate
 $ rake db:seed
 $ rails s
 ```
+在浏览器输入localhost：3000访问主页
+
 * * *
 
 ### Heroku云部署
-本项目已经在Heroku上进行了部署 ([演示Demo戳这里](https://yyiie.herokuapp.com/ ))
 
-tips：Heroku的注册和登录可能需要科学上网，请自备梯子。
 
-1.将编好的程序托管在github上
+项目可直接在Heroku上免费部署
+
+1.fork项目到自己github上
 
 2.创建Heroku账号以及Heroku app
 
-3.`heroku login` 以后添加新`app：heroku creat [appname]`
+3.将Heroku app与自己Github下的fork项目进行连接
 
-4.heroku会自动将自己添加进git的remote仓库中，如果没有的话可以手动添加heroku分支：`heroku git:remote -a yyiie`
+4.`heroku login` 以后添加新`app：heroku creat [appname]`
+
+5.heroku会自动将自己添加进git的remote仓库中，如果没有的话可以手动添加heroku分支：`heroku git:remote -a yyiie`
 
 5.运行`git push heroku master` 向heroku云端进行部署，稍等片刻。从各种环境都会自动进行部署。
 
@@ -35,34 +46,28 @@ tips：Heroku的注册和登录可能需要科学上网，请自备梯子。
 
 * * *
 
-### 目前功能：
+### 原系统功能：
 
 * 多角色登陆（学生，老师，管理员）
 * 学生动态选课，退课
 * 老师动态增加，删除课程
-* 老师对课程下的学生添加、修改成绩
+* 老师对课程下的学生添加、修改成绩（不能导入）
 * 权限控制：老师和学生只能看到自己相关课程信息
 
 * * *
 
-### 添加功能：
+### 本系统添加的功能：
+* 绑定用户邮箱（实现注册激活，忘记密码等）
+* 邮件自动推送成绩
+* 采用国科大真实选课数据，共有1100+条课程记录
+* 支持多条件课程查询功能
 * 处理选课冲突
 * 控制选课人数
-* 支持多条件课程查询功能
 * 设置/删除学位课
 * 统计选课学分
 * 根据选课结果显示课程表
 * 增加选课时间段的控制功能
 * 系统公告
-* 绑定用户邮箱（实现注册激活，忘记密码等）
-* 邮件自动推送成绩
-* 采用国科大真实选课数据，共有1100+条课程记录。
-
-* * *
-
-### 总体测试结果截图
-<img src="/lib/测试结果.png" width="700">  
-
 
 * * *
 
@@ -82,7 +87,7 @@ HTTP response codes:
 * * *
 
 ### 功能介绍
-#### 面向所有用户的邮件系统
+#### 邮件系统
 ##### 用户注册激活
 根据我们的需求分析，然后设计了如下的用户注册激活功能流程图：  
 
