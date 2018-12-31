@@ -138,7 +138,7 @@ HTTP response codes:
 
 拥有公告的增删改查权限，普通用户只有查询功能。
 
-<img src="/lib/notice/1.png" width="700">  
+<img src="/lib/notice/11.png" width="700">  
 这是主页上显示的公告内容，无论是否登录都可以点击进行查看。  
 
 <img src="/lib/notice/2.png" width="700">  
