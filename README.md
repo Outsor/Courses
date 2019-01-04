@@ -202,7 +202,7 @@ HTTP response codes:
 
 3.管理员登陆：
 
-账号：`admin@qq.com`
+账号：`admin@test.com`
 
 密码：`password`
 
