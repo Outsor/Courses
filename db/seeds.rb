@@ -39,37 +39,27 @@ end
 #-------------------------------------------------------------------------------------
 Notice.create(
     name: "test1",
-    content: "this is test1"
+    content: "this is test1！！！！！"
 )
 
 Notice.create(
     name: "test2",
-    content: "this is test2"
+    content: "春节假期时间是1.22-2.23！"
 )
 
 
 User.create(
-    name: "czj",
-    email: "admin@qq.com",
-    num: "2018E8018****55",
-    major: "计算机软件与理论",
+    name: "ycl",
+    email: "admin@test.com",
+    num: "2018E8018661121",
+    major: "计算机技术",
     department: "计算机与控制学院",
     password: "password",
     password_confirmation: "password",
     admin: true,
     active: true
 )
-User.create(
-    name: "dufuqiang",
-    email: "1317478158@qq.com",
-    num: "2018E8018****55",
-    major: "计算机软件与理论",
-    department: "计算机与控制学院",
-    password: "password",
-    password_confirmation: "password",
-    admin: true,
-    active: true
-)
+
 course_map={
   1 => {course_code: "011D9032Z﹡", name: "特征列方法引论", course_type: "其它", credit: "40/2.0", limit_num: "18", course_week: "第2-21周", course_time: "周二(5-6)", class_room: "N306", teaching_type: "课堂讲授为主", exam_type: "课堂开卷", department: "数学学院", semester: "2018-1"},
   2 => {course_code: "011D9039Z﹡", name: "数理逻辑", course_type: "其它", credit: "40/2.0", limit_num: "14", course_week: "第2-12周", course_time: "周一(5-6)", class_room: "N306", teaching_type: "课堂讲授为主", exam_type: "大开卷", department: "数学学院", semester: "2018-1"},
