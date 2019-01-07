@@ -39,9 +39,9 @@ $ rails s
 
 5.heroku会自动将自己添加进git的remote仓库中，如果没有的话可以手动添加heroku分支：`heroku git:remote -a yyiie`
 
-5.运行`git push heroku master` 向heroku云端进行部署，稍等片刻。从各种环境都会自动进行部署。
+6.运行`git push heroku master` 向heroku云端进行部署，稍等片刻。从各种环境都会自动进行部署。
 
-6.运行`heroku open`，就可以从heroku域名去访问我们所创建的网站了。
+7.运行`heroku open`，就可以从heroku域名去访问我们所创建的网站了。
 
 
 * * *
